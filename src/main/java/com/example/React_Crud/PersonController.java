@@ -24,6 +24,10 @@ public class PersonController {
     @Autowired
     private PersonRepository personRepository;
 
+    @GetMapping ("/demo")
+    public String greet(){
+        return "anand";
+    }
     // Get all people
     @GetMapping
     public List<Person> getAllPeople() {
